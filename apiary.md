@@ -1,10 +1,8 @@
-FORMAT: 1A
-
-HOST: https://api.fragnet.net
-
 # FragNET API
 
 FragNET is a simplistic Restful API that controls the deployment and management of hosted Gaming & VOIP services.
+
+HOST: https://api.fragnet.net
 
 # Group Game Servers
 
