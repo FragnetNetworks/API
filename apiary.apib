@@ -6,7 +6,7 @@ HOST: https://api.fragnet.net
 
 FragNET is a simplistic Restful API that controls the deployment and management of hosted Gaming & VOIP services.
 
-# Group Game Servers
+# Game Servers
 
 ## Create Server [/game/createServer]
 
@@ -75,9 +75,7 @@ the regional location for deployment.
 @RCON_Password (string) - Optional administrative password value for remote management
 
 + Request (application/json)
-
-    + Headers
-            
+   
     + Body
 
             {
@@ -180,8 +178,6 @@ to limit the results of the query.
 
 + Request (application/json)
 
-    + Headers
-
     + Body
     
             {
@@ -232,8 +228,6 @@ Start a game server instance from a previously stopped state.
 
 + Request (application/json)
 
-    + Headers
-
     + Body
 
             {
@@ -263,8 +257,6 @@ Start a game server instance from a previously stopped state.
 Stop a game server instance.
 
 + Request (application/json)
-
-    + Headers
 
     + Body
 
@@ -296,8 +288,6 @@ Restart a game server instance.
 
 + Request (application/json)
 
-    + Headers
-
     + Body
 
             {
@@ -328,8 +318,6 @@ Deactivate a game server instance. For accounts on an hourly plan,
 this will suspend both the service and billing until reactivated.
 
 + Request (application/json)
-
-    + Headers
 
     + Body
 
@@ -363,8 +351,6 @@ the runtime.
 
 + Request (application/json)
 
-    + Headers
-
     + Body
 
             {
@@ -394,8 +380,6 @@ the runtime.
 Delete a game server instance.
 
 + Request (application/json)
-
-    + Headers
 
     + Body
 
