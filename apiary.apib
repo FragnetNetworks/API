@@ -76,12 +76,12 @@ the regional location for deployment.
 + Request (application/json)
 
     + Headers
-
-            Authorization: Base64 encoded string literal in format "username:password" preceeded by authorization method and its space.
             
     + Body
 
             {
+                "api_user": "API_USER",
+                "api_key": "API_KEY",
                 "game": "csgo",
                 "slots": "24",
                 "location": "us-dal",
@@ -112,7 +112,7 @@ the regional location for deployment.
                         "endpoint": "127.0.0.1:21",
                         "user": "API_USER",
                         "password": "2Y5K5LLH9zxV2MKZ",
-                        "path": "/127.0.0.1 port 27015"
+                        "path": "/127.0.0.1_27015"
                     }
                 }
             }
@@ -181,11 +181,11 @@ to limit the results of the query.
 
     + Headers
 
-            Authorization: Base64 encoded string literal in format "username:password" preceeded by authorization method and its space.
-
     + Body
     
             {
+                "api_user": "API_USER",
+                "api_key": "API_KEY",
                 "game": "csgo",
                 "status": "enabled",
                 "location": "us-atl"
@@ -212,10 +212,10 @@ to limit the results of the query.
                         "status": "Enabled",
                         "rcon": "admin_password",
                         "ftp": {
-                            "endpoint": "127.0.0.1:27015",
+                            "endpoint": "127.0.0.1:21",
                             "user": "API_USER",
                             "password": "2Y5K5LLH9zxV2MKZ",
-                            "path": "/127.0.0.1 port 27015"
+                            "path": "/127.0.0.1_27015"
                         }
                     }
                 ]
@@ -233,11 +233,11 @@ Start a game server instance from a previously stopped state.
 
     + Headers
 
-            Authorization: Base64 encoded string literal in format "username:password" preceeded by authorization method and its space.
-
     + Body
 
             {
+                "api_user": "API_USER",
+                "api_key": "API_KEY",
                 "address": "127.0.0.1:27015",
             }
 
@@ -265,11 +265,11 @@ Stop a game server instance.
 
     + Headers
 
-            Authorization: Base64 encoded string literal in format "username:password" preceeded by authorization method and its space.
-
     + Body
 
             {
+                "api_user": "API_USER",
+                "api_key": "API_KEY",
                 "address": "127.0.0.1:27015",
             }
 
@@ -297,11 +297,11 @@ Restart a game server instance.
 
     + Headers
 
-            Authorization: Base64 encoded string literal in format "username:password" preceeded by authorization method and its space.
-
     + Body
 
             {
+                "api_user": "API_USER",
+                "api_key": "API_KEY",
                 "address": "127.0.0.1:27015",
             }
 
@@ -330,11 +330,11 @@ this will suspend both the service and billing until reactivated.
 
     + Headers
 
-            Authorization: Base64 encoded string literal in format "username:password" preceeded by authorization method and its space.
-
     + Body
 
             {
+                "api_user": "API_USER",
+                "api_key": "API_KEY",
                 "address": "127.0.0.1:27015",
             }
 
@@ -364,11 +364,11 @@ the runtime.
 
     + Headers
 
-            Authorization: Base64 encoded string literal in format "username:password" preceeded by authorization method and its space.
-
     + Body
 
             {
+                "api_user": "API_USER",
+                "api_key": "API_KEY",
                 "address": "127.0.0.1:27015",
             }
 
@@ -396,11 +396,11 @@ Delete a game server instance.
 
     + Headers
 
-            Authorization: Base64 encoded string literal in format "username:password" preceeded by authorization method and its space.
-
     + Body
 
             {
+                "api_user": "API_USER",
+                "api_key": "API_KEY",
                 "address": "127.0.0.1:27015",
             }
 
